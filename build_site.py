@@ -926,6 +926,17 @@ def generate_homepage():
     </div>
 </section>
 
+<!-- Watch: 5 Minute Overview -->
+<section class="video-feature">
+    <h2 class="video-feature-title">&#127916; Watch 5 Minute Overview</h2>
+    <div class="video-feature-player">
+        <video controls preload="metadata" poster="assets/images/logo.jpeg">
+            <source src="assets/videos/survitality-overview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
 <!-- Table of Contents -->
 <nav class="toc">
     <h2 class="toc-title">Table of Contents</h2>

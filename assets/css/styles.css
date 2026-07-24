@@ -1116,6 +1116,36 @@ img {
 }
 
 /* ============================================
+   Video Feature Section
+   ============================================ */
+
+.video-feature {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.video-feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.video-feature-player {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+}
+
+.video-feature-player video {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+}
+
+/* ============================================
    Table of Contents
    ============================================ */
 
