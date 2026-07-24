@@ -857,116 +857,200 @@ def generate_homepage():
     </div>
 </div>
 
-<h2 class="section-heading">Top Topics</h2>
-<div class="topic-grid">
-    <div class="topic-card">
-        <h3>&#127827; Nascent Aim</h3>
-        <ul>
-            <li>Primal Semantic Lean</li>
-            <li>2015-2017 News</li>
-        </ul>
+<!-- Table of Contents -->
+<nav class="toc">
+    <h2 class="toc-title">Table of Contents</h2>
+    <div class="toc-grid">
+        <a href="pages/2015-2025-Cortext.io_193134629.html" class="toc-card">
+            <div class="toc-icon">&#128640;</div>
+            <div class="toc-card-content">
+                <h3>2015-2025 Cortext.io</h3>
+                <p>A lightweight AI middleware — semantic algebra, microservices, elastic stack, and the evolution to LinguaLint</p>
+                <span class="toc-count">17 pages</span>
+            </div>
+        </a>
+        <a href="pages/2019-2025-Responsibility-Futures_192643159.html" class="toc-card">
+            <div class="toc-icon">&#9878;&#65039;</div>
+            <div class="toc-card-content">
+                <h3>Responsibility Futures</h3>
+                <p>Constitution of MANGO, 9 Constraints of AI, Sugar Oracle, Social Agent-Based Models, and predicate calculus</p>
+                <span class="toc-count">19 pages</span>
+            </div>
+        </a>
+        <a href="pages/Allegories_17760257.html" class="toc-card">
+            <div class="toc-icon">&#128214;</div>
+            <div class="toc-card-content">
+                <h3>Allegories</h3>
+                <p>Speaking Otherwise — 21 stories from Crypto Mine to Street Math, translating complex systems into narrative</p>
+                <span class="toc-count">21 stories</span>
+            </div>
+        </a>
+        <a href="pages/iMASS-and-Family-Resource-Mgmt_125206530.html" class="toc-card">
+            <div class="toc-icon">&#127968;</div>
+            <div class="toc-card-content">
+                <h3>iMASS &amp; Family Resource Mgmt</h3>
+                <p>Account Ninja, Ambient-Gantt, Family FHIR, Tiny Homes Digital Twin, and the Language of Happiness</p>
+                <span class="toc-count">10 pages</span>
+            </div>
+        </a>
+        <a href="pages/Survitality-Series_273645597.html" class="toc-card">
+            <div class="toc-icon">&#127793;</div>
+            <div class="toc-card-content">
+                <h3>Survitality Series</h3>
+                <p>Put Options on Loyalty, Street Math with a Super Computer, and the Ontology of Survitality</p>
+                <span class="toc-count">4 pages</span>
+            </div>
+        </a>
+        <a href="pages/AI-Resilience-Architecture_203751428.html" class="toc-card">
+            <div class="toc-icon">&#129302;</div>
+            <div class="toc-card-content">
+                <h3>AI Resilience Architecture</h3>
+                <p>Potential projects — agentic procurement, gurila.tools, and riskrunners</p>
+                <span class="toc-count">3 pages</span>
+            </div>
+        </a>
+        <a href="pages/This-Ship-is-Built---Final-Reflection_112001110.html" class="toc-card">
+            <div class="toc-icon">&#9973;</div>
+            <div class="toc-card-content">
+                <h3>This Ship is Built</h3>
+                <p>Final reflection and New Horizon</p>
+                <span class="toc-count">2 pages</span>
+            </div>
+        </a>
+        <a href="pages/Central-Links_192643158.html" class="toc-card">
+            <div class="toc-icon">&#128279;</div>
+            <div class="toc-card-content">
+                <h3>Central Links</h3>
+                <p>LinguaLint, Richards Plus, About Jefferson, iMASS, Codebase, and Philosophy Club</p>
+                <span class="toc-count">7 links</span>
+            </div>
+        </a>
     </div>
-    <div class="topic-card">
-        <h3>&#129373; End in Mind</h3>
-        <ul>
-            <li>Semantic Algebra</li>
-            <li>Thread of Intent</li>
-            <li>Tokenize on Primes</li>
-        </ul>
-    </div>
-    <div class="topic-card">
-        <h3>&#127821; ISO 31000 News Service</h3>
-        <ul>
-            <li>Tired of Fake News?</li>
-            <li>50 Emails in 3 Days</li>
-            <li>GDELT Project</li>
-        </ul>
-    </div>
-    <div class="topic-card">
-        <h3>&#127824; Microservices</h3>
-        <ul>
-            <li>Lambda &lt; 15 Min</li>
-            <li>AWS Batch &gt; 15 Min</li>
-            <li>API Gateway</li>
-            <li>Apps, Extensions, Reports</li>
-        </ul>
-    </div>
-    <div class="topic-card">
-        <h3>&#127819; Architecture</h3>
-        <ul>
-            <li>Data: Event Store</li>
-            <li>Elastic Stack</li>
-            <li>&rarr; Vector DB</li>
-        </ul>
-    </div>
-    <div class="topic-card">
-        <h3>&#127826; Consolidation</h3>
-        <ul>
-            <li>Modularize</li>
-            <li>Federate</li>
-            <li>Lakehouse</li>
-        </ul>
-    </div>
-</div>
+</nav>
 
-<h2 class="section-heading">Projects</h2>
-<div class="links-grid">
-    <a href="pages/AI-Resilience-Architecture_203751428.html" class="link-item">
-        <span class="link-dot"></span>Potential Projects for Us to Vibe On
-    </a>
-    <a href="https://www.lingualint.com" target="_blank" class="link-item">
-        <span class="link-dot"></span>LinguaLint (formerly Cortext.io) LLM-middleware
-    </a>
-    <a href="https://riskrunners.com" target="_blank" class="link-item">
-        <span class="link-dot"></span>Wiki for Public Risk Factors
-    </a>
-    <a href="https://plm.integralmass.com" target="_blank" class="link-item">
-        <span class="link-dot"></span>Integral Manufacturing and Shared Services (iMASS)
-    </a>
-    <a href="pages/iMASS-and-Family-Resource-Mgmt_125206530.html" class="link-item">
-        <span class="link-dot"></span>iMASS and Family Resource Mgmt
-    </a>
-    <a href="https://account.ninja" target="_blank" class="link-item">
-        <span class="link-dot"></span>Account Growth Simulator
-    </a>
-    <a href="https://github.com/jeffy893/gurila.tools/tree/dev/2.0/use-cases/observability-ml-for-api" target="_blank" class="link-item">
-        <span class="link-dot"></span>Observability ML for API Service
-    </a>
-    <a href="https://github.com/jeffy893/gurila.tools/tree/dev/2.0/use-cases/spark-etl-for-cpg-analytics-seltzers" target="_blank" class="link-item">
-        <span class="link-dot"></span>PySpark CPG Point-of-Sale Analysis
-    </a>
-    <a href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/legacy/humanitarian-gambit" target="_blank" class="link-item">
-        <span class="link-dot"></span>Humanitarian Gambit
-    </a>
-</div>
+<!-- Initial Design -->
+<section class="home-section">
+    <h2 class="section-heading">Initial Design</h2>
+    <div class="featured-links">
+        <a href="pages/2014-Cosmos-Introduction_91488258.html" class="featured-link">
+            <span class="featured-emoji">&#127756;</span>
+            <span class="featured-text">2014 Cosmos Introduction</span>
+        </a>
+        <a href="pages/96337921.html" class="featured-link">
+            <span class="featured-emoji">&#128161;</span>
+            <span class="featured-text">2014 Philosophy: Freedom to Model</span>
+        </a>
+        <a href="pages/2015-Philosophy-of-AI_247627792.html" class="featured-link">
+            <span class="featured-emoji">&#129504;</span>
+            <span class="featured-text">2015 Philosophy of AI</span>
+        </a>
+    </div>
+</section>
 
-<h2 class="section-heading">Personal</h2>
-<div class="links-grid">
-    <a href="https://www.jefferson.cloud" target="_blank" class="link-item">
-        <span class="link-dot"></span>jefferson.cloud - Socialize
-    </a>
-    <a href="https://www.richards.systems" target="_blank" class="link-item">
-        <span class="link-dot"></span>richards.systems - Decode
-    </a>
-    <a href="https://www.richards.plus" target="_blank" class="link-item">
-        <span class="link-dot"></span>richards.plus - Consult
-    </a>
-    <a href="https://github.com/sponsors/jeffy893" target="_blank" class="link-item">
-        <span class="link-dot"></span>Sponsor Jefferson to Keep Coding
-    </a>
-    <a href="pages/This-Ship-is-Built---Final-Reflection_112001110.html" class="link-item">
-        <span class="link-dot"></span>This Ship is Built - Final Reflection
-    </a>
-    <a href="https://rizzcapture.com" target="_blank" class="link-item">
-        <span class="link-dot"></span>Marketing Methodology
-    </a>
-    <a href="https://github.com/jeffy893" target="_blank" class="link-item">
-        <span class="link-dot"></span>Codebase
-    </a>
-    <a href="https://street.riskrunners.com" target="_blank" class="link-item">
-        <span class="link-dot"></span>Street Math for UA RiskRunners
-    </a>
-</div>'''
+<!-- Top Topics -->
+<section class="home-section">
+    <h2 class="section-heading">Cortext.io Top Topics</h2>
+    <div class="topic-grid">
+        <div class="topic-card">
+            <h3>&#127827; Nascent Aim</h3>
+            <ul><li>Primal Semantic Lean</li><li>2015-2017 News</li></ul>
+        </div>
+        <div class="topic-card">
+            <h3>&#129373; End in Mind</h3>
+            <ul><li>Semantic Algebra</li><li>Thread of Intent</li><li>Tokenize on Primes</li></ul>
+        </div>
+        <div class="topic-card">
+            <h3>&#127821; ISO 31000 News</h3>
+            <ul><li>Tired of Fake News?</li><li>50 Emails in 3 Days</li><li>GDELT Project</li></ul>
+        </div>
+        <div class="topic-card">
+            <h3>&#127824; Microservices</h3>
+            <ul><li>Lambda &lt; 15 Min</li><li>AWS Batch &gt; 15 Min</li><li>API Gateway</li></ul>
+        </div>
+        <div class="topic-card">
+            <h3>&#127819; Architecture</h3>
+            <ul><li>Data: Event Store</li><li>Elastic Stack</li><li>&rarr; Vector DB</li></ul>
+        </div>
+        <div class="topic-card">
+            <h3>&#127826; Consolidation</h3>
+            <ul><li>Modularize</li><li>Federate</li><li>Lakehouse</li></ul>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="home-section">
+    <h2 class="section-heading">Projects</h2>
+    <div class="featured-links">
+        <a href="pages/AI-Resilience-Architecture_203751428.html" class="featured-link">
+            <span class="featured-emoji">&#128736;</span>
+            <span class="featured-text">Potential Projects for Us to Vibe On</span>
+        </a>
+        <a href="https://www.lingualint.com" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128300;</span>
+            <span class="featured-text">LinguaLint (formerly Cortext.io) — LLM-middleware</span>
+        </a>
+        <a href="https://riskrunners.com" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#9888;&#65039;</span>
+            <span class="featured-text">Wiki for Public Risk Factors</span>
+        </a>
+        <a href="https://plm.integralmass.com" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#127981;</span>
+            <span class="featured-text">Integral Manufacturing and Shared Services (iMASS)</span>
+        </a>
+        <a href="pages/iMASS-and-Family-Resource-Mgmt_125206530.html" class="featured-link">
+            <span class="featured-emoji">&#128106;</span>
+            <span class="featured-text">iMASS and Family Resource Mgmt</span>
+        </a>
+        <a href="https://account.ninja" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128176;</span>
+            <span class="featured-text">Account Growth Simulator</span>
+        </a>
+        <a href="https://github.com/jeffy893/gurila.tools/tree/dev/2.0/use-cases/observability-ml-for-api" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128065;</span>
+            <span class="featured-text">Observability ML for API Service</span>
+        </a>
+        <a href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/legacy/humanitarian-gambit" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#127758;</span>
+            <span class="featured-text">Humanitarian Gambit</span>
+        </a>
+    </div>
+</section>
+
+<!-- Personal -->
+<section class="home-section">
+    <h2 class="section-heading">Personal</h2>
+    <div class="featured-links">
+        <a href="https://www.jefferson.cloud" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#127752;</span>
+            <span class="featured-text">jefferson.cloud — Socialize</span>
+        </a>
+        <a href="https://www.richards.systems" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128421;</span>
+            <span class="featured-text">richards.systems — Decode</span>
+        </a>
+        <a href="https://www.richards.plus" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#129309;</span>
+            <span class="featured-text">richards.plus — Consult</span>
+        </a>
+        <a href="https://github.com/sponsors/jeffy893" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#10084;&#65039;</span>
+            <span class="featured-text">Sponsor Jefferson to Keep Coding</span>
+        </a>
+        <a href="https://rizzcapture.com" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#127907;</span>
+            <span class="featured-text">Marketing Methodology</span>
+        </a>
+        <a href="https://github.com/jeffy893" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128187;</span>
+            <span class="featured-text">Codebase (GitHub)</span>
+        </a>
+        <a href="https://street.riskrunners.com" target="_blank" class="featured-link">
+            <span class="featured-emoji">&#128200;</span>
+            <span class="featured-text">Street Math for UA RiskRunners</span>
+        </a>
+    </div>
+</section>'''
     return content
 
 # ============================================
