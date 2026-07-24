@@ -269,6 +269,28 @@ CUSTOM_PAGES = {
     "Cortext.io-Event-Report_17498151.html",
 }
 
+# Popular pages (25+ views from Confluence analytics)
+# These get a visual "popular" indicator in the sidebar
+POPULAR_PAGES = {
+    "Richards-Systems_16679146.html",          # 1976
+    "AI-Resilience-Architecture_203751428.html",  # 69
+    "Allegories_17760257.html",                # 63
+    "Lavender-Cucumber-Blueberry-Water_69926913.html",  # 54
+    "iMASS-and-Family-Resource-Mgmt_125206530.html",    # 54
+    "9-Constraints-of-AI_91389954.html",       # 44
+    "2014-Cosmos-Introduction_91488258.html",  # 43
+    "This-Ship-is-Built---Final-Reflection_112001110.html",  # 39
+    "The-Boxers-Strategy_17760371.html",       # 37
+    "2024-10-01-Reverse-Conway-on-Richards-Systems_39616513.html",  # 37
+    "Quotas-took-our-jobs%21_17760423.html",   # 33
+    "The-Great-Polished-Catamaran_17760341.html",  # 28
+    "The-Grand-Arbiter_78675969.html",         # 27
+    "Ambient-Gantt_152797206.html",            # 27
+    "Account-Ninja_125206539.html",            # 26
+    "Cortext.io-Event-Report_17498151.html",   # 25
+    "Digital-Icarus_33030147.html",            # 25
+}
+
 # ============================================
 # Page title lookup
 # ============================================
@@ -337,14 +359,15 @@ def render_nav_tree(tree, current_file=None, depth=0):
         else:
             active_cls = ' active' if is_active else ''
             page_url = f"pages/{get_page_slug(filename)}.html"
+            popular_cls = ' popular' if filename in POPULAR_PAGES else ''
             
             if has_children:
                 toggle_cls = ' expanded' if in_subtree else ''
-                html_parts.append(f'<a class="nav-link{active_cls}" href="{page_url}">')
+                html_parts.append(f'<a class="nav-link{active_cls}{popular_cls}" href="{page_url}">')
                 html_parts.append(f'<button class="nav-toggle{toggle_cls}" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>')
                 html_parts.append(f'<span>{html_escape(title)}</span></a>')
             else:
-                html_parts.append(f'<a class="nav-link{active_cls}" href="{page_url}">')
+                html_parts.append(f'<a class="nav-link{active_cls}{popular_cls}" href="{page_url}">')
                 html_parts.append(f'<span>{html_escape(title)}</span></a>')
         
         if has_children:
@@ -832,7 +855,8 @@ def generate_children_list(parent_title, children):
             parts.append('</a>')
         else:
             slug = get_page_slug(child_file)
-            parts.append(f'<a href="{slug}.html" class="link-item">')
+            popular_cls = ' link-item-popular' if child_file in POPULAR_PAGES else ''
+            parts.append(f'<a href="{slug}.html" class="link-item{popular_cls}">')
             parts.append(f'<span class="link-dot"></span>{html_escape(child_title)}')
             if has_grandchildren:
                 count = len(child["children"])
@@ -1062,6 +1086,77 @@ def generate_homepage():
         <a href="https://street.riskrunners.com" target="_blank" class="featured-link">
             <span class="featured-emoji">&#128200;</span>
             <span class="featured-text">Street Math for UA RiskRunners</span>
+        </a>
+    </div>
+</section>
+
+<!-- Most Popular Pages -->
+<section class="home-section">
+    <h2 class="section-heading">&#128293; Most Viewed Pages</h2>
+    <div class="popular-grid">
+        <a href="pages/AI-Resilience-Architecture_203751428.html" class="popular-card">
+            <span class="popular-views">69 views</span>
+            <span class="popular-title">AI Resilience Architecture</span>
+        </a>
+        <a href="pages/Allegories_17760257.html" class="popular-card">
+            <span class="popular-views">63 views</span>
+            <span class="popular-title">Allegories</span>
+        </a>
+        <a href="pages/Lavender-Cucumber-Blueberry-Water_69926913.html" class="popular-card">
+            <span class="popular-views">54 views</span>
+            <span class="popular-title">Lavender-Cucumber-Blueberry Water</span>
+        </a>
+        <a href="pages/iMASS-and-Family-Resource-Mgmt_125206530.html" class="popular-card">
+            <span class="popular-views">54 views</span>
+            <span class="popular-title">iMASS and Family Resource Mgmt</span>
+        </a>
+        <a href="pages/9-Constraints-of-AI_91389954.html" class="popular-card">
+            <span class="popular-views">44 views</span>
+            <span class="popular-title">9 Constraints of AI</span>
+        </a>
+        <a href="pages/2014-Cosmos-Introduction_91488258.html" class="popular-card">
+            <span class="popular-views">43 views</span>
+            <span class="popular-title">2014 Cosmos Introduction</span>
+        </a>
+        <a href="pages/This-Ship-is-Built---Final-Reflection_112001110.html" class="popular-card">
+            <span class="popular-views">39 views</span>
+            <span class="popular-title">This Ship is Built - Final Reflection</span>
+        </a>
+        <a href="pages/The-Boxers-Strategy_17760371.html" class="popular-card">
+            <span class="popular-views">37 views</span>
+            <span class="popular-title">The Boxers Strategy</span>
+        </a>
+        <a href="pages/2024-10-01-Reverse-Conway-on-Richards-Systems_39616513.html" class="popular-card">
+            <span class="popular-views">37 views</span>
+            <span class="popular-title">Reverse Conway on Richards Systems</span>
+        </a>
+        <a href="pages/Quotas-took-our-jobs!_17760423.html" class="popular-card">
+            <span class="popular-views">33 views</span>
+            <span class="popular-title">Quotas took our jobs!</span>
+        </a>
+        <a href="pages/The-Great-Polished-Catamaran_17760341.html" class="popular-card">
+            <span class="popular-views">28 views</span>
+            <span class="popular-title">The Great Polished Catamaran</span>
+        </a>
+        <a href="pages/The-Grand-Arbiter_78675969.html" class="popular-card">
+            <span class="popular-views">27 views</span>
+            <span class="popular-title">The Grand Arbiter</span>
+        </a>
+        <a href="pages/Ambient-Gantt_152797206.html" class="popular-card">
+            <span class="popular-views">27 views</span>
+            <span class="popular-title">Ambient-Gantt</span>
+        </a>
+        <a href="pages/Account-Ninja_125206539.html" class="popular-card">
+            <span class="popular-views">26 views</span>
+            <span class="popular-title">Account Ninja</span>
+        </a>
+        <a href="pages/Digital-Icarus_33030147.html" class="popular-card">
+            <span class="popular-views">25 views</span>
+            <span class="popular-title">Digital Icarus</span>
+        </a>
+        <a href="pages/Cortext.io-Event-Report_17498151.html" class="popular-card">
+            <span class="popular-views">25 views</span>
+            <span class="popular-title">Cortext.io Event Report</span>
         </a>
     </div>
 </section>'''

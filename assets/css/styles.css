@@ -431,6 +431,100 @@ img {
     flex-shrink: 0;
 }
 
+/* Popular page indicators in sidebar */
+.nav-link.popular {
+    font-weight: 500;
+}
+
+.nav-link.popular::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #f59e0b;
+    border-radius: 50%;
+    margin-left: auto;
+    flex-shrink: 0;
+    box-shadow: 0 0 4px rgba(245, 158, 11, 0.4);
+}
+
+.nav-link.popular span {
+    color: #92400e;
+}
+
+.nav-link.popular:hover span {
+    color: var(--color-accent);
+}
+
+/* Popular link items on folder pages */
+.link-item-popular {
+    border-color: #fde68a;
+    background: #fffbeb;
+    font-weight: 600;
+}
+
+.link-item-popular .link-dot {
+    background: #f59e0b;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.4);
+}
+
+.link-item-popular:hover {
+    border-color: #f59e0b;
+    background: #fef3c7;
+}
+
+/* Popular pages grid (homepage bottom) */
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.popular-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+    border: 1px solid #fde68a;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+}
+
+.popular-card:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.popular-views {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #b45309;
+    background: #fef3c7;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.popular-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1.3;
+}
+
+.popular-card:hover .popular-title {
+    color: #92400e;
+}
+
 .nav-toggle {
     display: inline-flex;
     align-items: center;
