@@ -895,6 +895,37 @@ def generate_homepage():
     </div>
 </div>
 
+<!-- Featured: Survitality Book Series -->
+<section class="books-feature">
+    <div class="books-feature-inner">
+        <a href="https://www.amazon.com/dp/B0GQVVVD6Q?binding=paperback" target="_blank" class="books-image-link">
+            <img src="assets/images/survitality-books.png" alt="The Survitality Series by Jefferson Richards" class="books-image">
+        </a>
+        <div class="books-content">
+            <h2 class="books-title">The Survitality Series</h2>
+            <p class="books-tagline">Three volumes exploring data architecture, neurobiology, linguistics, and socioeconomic governance — a framework for navigating an algorithmic world with engineered certainty and vitality.</p>
+            <div class="books-list">
+                <div class="book-item">
+                    <strong>Book 1: Survitality of the Synapse</strong>
+                    <p>The architecture of language, machine vs. organic learning, and the macro synapse — how neural networks mirror data architecture.</p>
+                </div>
+                <div class="book-item">
+                    <strong>Book 2: Stockholm Forgiveness of Responsibility</strong>
+                    <p>The calculus of choice (R = I/N), media event codes, and responsibility futures — locking in future choices through agreements.</p>
+                </div>
+                <div class="book-item">
+                    <strong>Book 3: Put Options on Loyalty</strong>
+                    <p>Optionality requires loyalty. The Dunbar Calculus of Value, Ambient Gantt, Family Medic, and the Family Charter — translating macroeconomic tools into household cooperation.</p>
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GQVVVD6Q?binding=paperback" target="_blank" class="books-cta">
+                View on Amazon
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
 <!-- Table of Contents -->
 <nav class="toc">
     <h2 class="toc-title">Table of Contents</h2>
