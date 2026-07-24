@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicate Calculus for Responsibility Index - Richards Systems Wiki</title>
+    <meta name="description" content="Richards Systems Knowledge Base — 10+ years of homegrown AI, responsibility futures, and systems architecture.">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wiki.richards.systems/">
+    <meta property="og:title" content="Predicate Calculus for Responsibility Index - Richards Systems Wiki">
+    <meta property="og:description" content="Richards Systems Knowledge Base — 10+ years of homegrown AI, responsibility futures, and systems architecture.">
+    <meta property="og:image" content="https://wiki.richards.systems/assets/images/logo.jpeg">
+    <meta property="og:image:width" content="1536">
+    <meta property="og:image:height" content="1536">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://wiki.richards.systems/assets/images/logo.jpeg">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16.png">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<div class="site-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <button class="sidebar-toggle" aria-label="Toggle navigation">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18"/>
+                    </svg>
+                </button>
+                <a href="../index.html" class="site-logo">
+                    <img src="../assets/images/logo.jpeg" alt="Richards Systems" class="logo-image">
+                    <div>
+                        <div class="site-title">Richards Systems</div>
+                        <div class="site-subtitle">Knowledge Base</div>
+                    </div>
+                </a>
+            </div>
+            <div class="header-right">
+                <nav class="header-nav">
+                    <a href="https://jefferson.cloud" target="_blank" class="header-nav-link socialize">Socialize</a>
+                    <a href="https://richards.systems" target="_blank" class="header-nav-link decode">Decode</a>
+                    <a href="https://richards.plus" target="_blank" class="header-nav-link consult">Consult</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-body">
+        <!-- Sidebar -->
+        <aside class="site-sidebar">
+            <div class="sidebar-content">
+                <ul class="nav-tree expanded">
+<li class="nav-item">
+<a class="nav-link" href="2014-Cosmos-Introduction_91488258.html">
+<span>2014 Cosmos Introduction</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="96337921.html">
+<span>2014 Philosophy: Freedom to Model</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2015-Philosophy-of-AI_247627792.html">
+<span>2015 Philosophy of AI</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2015-2025-Cortext.io_193134629.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>2015-2025 Cortext.io</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/sponsors/jeffy893" target="_blank" rel="noopener">
+<span>Sponsor Jefferson to Keep Coding</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="17399817.html">
+<span>Intro: Project Overview</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="17399899.html">
+<span>Intro: BostonCC Video</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2016-11-28-Semantic-Algebra_17661953.html">
+<span>2016-11-28 Semantic Algebra</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.gdeltproject.org/" target="_blank" rel="noopener">
+<span>Inspired by the GDELT Project</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2017-04-27-ISO-31000-News-Service_17661955.html">
+<span>2017-04-27 ISO 31000 News Service</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2018-06-20-Cortext-Nascent-Aim_17367066.html">
+<span>2018-06-20 Cortext Nascent Aim</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2018-10-08-Cortext-Data-Model_17203235.html">
+<span>2018-10-08 Cortext Data Model</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2022-11-01-AWS-Batch-Fargate-Setup_17236017.html">
+<span>2022-11-01 AWS Batch-Fargate Setup</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Microservices_17498129.html">
+<span>Microservices</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Cortext.io-Event-Report_17498151.html">
+<span>Cortext.io Event Report</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Cortext.io-Elastic-Stack_17367070.html">
+<span>Cortext.io Elastic Stack</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Cortext.io-Extension_17235994.html">
+<span>Cortext.io Extension</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-02-27-Serverless-Arch-ProcureCrawl_17399881.html">
+<span>2024-02-27 Serverless Arch ProcureCrawl</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-08-13-Consolidation_17301534.html">
+<span>2024-08-13 Consolidation</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-09-04-Cortext.io-Conclusion_33128449.html">
+<span>2024-09-04 Cortext.io Conclusion</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-10-01-Reverse-Conway-on-Richards-Systems_39616513.html">
+<span>2024-10-01 Reverse Conway on Richards Systems</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2019-2025-Responsibility-Futures_192643159.html">
+<button class="nav-toggle expanded" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>2019-2025 Responsibility Futures</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="2019-2021-Responsibility-Index_205717544.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>2019-2021 Responsibility Index</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="2019-04-13_Constitution_of_MANGO_94404609.html">
+<span>2019-04-13 Constitution of MANGO</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2019-Responsibility-Futures_247758851.html">
+<span>2019 Responsibility Futures</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2019-05-29_Invasive-Species_90505220.html">
+<span>2019-05-29 Invasive Species</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2021-03-12_Intention_Div_Negligence_96206849.html">
+<span>2021-03-12 Intention Div Negligence</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2019-11-21_Phone_Deprivation_109084731.html">
+<span>2019-11-21 Phone Deprivation</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-2025-Responsibility-Futures_205717545.html">
+<button class="nav-toggle expanded" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>2024-2025 Responsibility Futures</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="2024-04-27_Clusteral_Solidarity_109248513.html">
+<span>2024-04-27 Clusteral Solidarity</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="9-Constraints-of-AI_91389954.html">
+<span>9 Constraints of AI</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="Predicate-Calculus-for-Responsibility-Index_94044161.html">
+<span>Predicate Calculus for Responsibility Index</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-04-25_The-Sugar-Oracle_109281281.html">
+<span>2025-04-25 The Sugar Oracle</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-04-26_Prolog-Companions_109215762.html">
+<span>2025-04-26 Prolog Companions</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/sugarscapes" target="_blank" rel="noopener">
+<span>riskrunners/sugarscapes</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Sugar-Oracle-Applications_112066561.html">
+<span>The Sugar Oracle Applications</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="112033797.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Further Research: Social Agent-Based Models</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="Social-Agent-Based-Models_112001043.html">
+<span>Social Agent-Based Models</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/legacy/dark-campus" target="_blank" rel="noopener">
+<span>riskrunners/dark-campus</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/platforms/02_schrodingers-fish" target="_blank" rel="noopener">
+<span>riskrunners/schrodingers-fish</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Conclusion-to-Responsibility-Index_112001099.html">
+<span>Conclusion to Responsibility Index</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-10-12-Common-Grievances_160595969.html">
+<span>2025-10-12 Common Grievances</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/responsibility-futures" target="_blank" rel="noopener">
+<span>Resp. Futures Integration with Cortext.io</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners/tree/dev/2.0/platforms/02_schrodingers-fish/economic-overture" target="_blank" rel="noopener">
+<span>Tribute to The Local Hub</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Allegories_17760257.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Allegories</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="Crypto-Mine_17760311.html">
+<span>Crypto Mine</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Estranged-Mouse_17760296.html">
+<span>The Estranged Mouse</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Pimper_17760326.html">
+<span>Pimper</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Traveling-Analyst_17760356.html">
+<span>The Traveling Analyst</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Boxers-Strategy_17760371.html">
+<span>The Boxers Strategy</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Honey,-Flo-gave-me-call_17760386.html">
+<span>Honey, Flo gave me call</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Big-Sorority-Shirt_17760401.html">
+<span>The Big Sorority Shirt</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Quotas-took-our-jobs!_17760423.html">
+<span>Quotas took our jobs!</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="17760438.html">
+<span>Who Moved My Cheese?</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Brazen-Cups_17760453.html">
+<span>The Brazen Cups</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Re-Porter-Potty_17760468.html">
+<span>Re-Porter Potty</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Great-Polished-Catamaran_17760341.html">
+<span>The Great Polished Catamaran</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Digital-Icarus_33030147.html">
+<span>Digital Icarus</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="15-Minutes-of-Fame_67076097.html">
+<span>15 Minutes of Fame</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Lavender-Cucumber-Blueberry-Water_69926913.html">
+<span>Lavender-Cucumber-Blueberry Water</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Grand-Arbiter_78675969.html">
+<span>The Grand Arbiter</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="To-Match-Your-Pretty-Eyes_81428481.html">
+<span>To Match Your Pretty Eyes</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="AR-Tactile-Education-Opportunities_83787781.html">
+<span>AR Tactile Education Opportunities</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Hermes_84967427.html">
+<span>Hermes</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Pacific-Go_90800131.html">
+<span>The Pacific Go</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Caveman-Fashion_152895556.html">
+<span>Caveman Fashion</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Street-Math_273383426.html">
+<span>Street Math</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="iMASS-and-Family-Resource-Mgmt_125206530.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>iMASS and Family Resource Mgmt</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="Account-Ninja_125206539.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Account Ninja</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/account.ninja" target="_blank" rel="noopener">
+<span>jeffy893/account.ninja</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://account.ninja/" target="_blank" rel="noopener">
+<span>Account Ninja - Financial Dashboard</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Ambient-Gantt_152797206.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Ambient-Gantt</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="2025-09-21-Dunbar-Calculus-of-Value_152895504.html">
+<span>2025-09-21 Dunbar Calculus of Value</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-09-27-Decentral-Time-Value-of-Events_152797190.html">
+<span>2025-09-27 Decentral Time Value of Events</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Ambient-Gantt---the-antidote_152797228.html">
+<span>Ambient Gantt - the antidote</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Ambient-Gantt-Slides_152895520.html">
+<span>Ambient Gantt Slides</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="The-Language-of-Happiness_152797235.html">
+<span>The Language of Happiness</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2019-10-30-FlyByWire-Optimization_144310273.html">
+<span>2019-10-30 FlyByWire Optimization</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2024-05-08-Family-FHIR_175734785.html">
+<span>2024-05-08 Family FHIR</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-09-28-Tiny-Homes-Digital-Twin_153092164.html">
+<span>2025-09-28 Tiny Homes Digital Twin</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2025-10-12-Family-Charter_160497665.html">
+<span>2025-10-12 Family Charter</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="2026-04-30-Language-of-Happiness_291864577.html">
+<span>2026-04-30 Language of Happiness</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="This-Ship-is-Built---Final-Reflection_112001110.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>This Ship is Built - Final Reflection</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="New-Horizon_112787458.html">
+<span>New Horizon</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Central-Links_192643158.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Central Links</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="https://www.lingualint.com/" target="_blank" rel="noopener">
+<span>LinguaLint: The Re-Search Engine</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.richards.plus/" target="_blank" rel="noopener">
+<span>Richards Plus: Consulting</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.richards.systems/" target="_blank" rel="noopener">
+<span>Richards Systems</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.jefferson.cloud/" target="_blank" rel="noopener">
+<span>About Jefferson</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.integralmass.com/" target="_blank" rel="noopener">
+<span>Integral Manuf. and Shared Services</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893" target="_blank" rel="noopener">
+<span>Codebase</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.epicideas.club/" target="_blank" rel="noopener">
+<span>2022-2023 Philosophy Club</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="AI-Resilience-Architecture_203751428.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>AI Resilience Architecture</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/agentic-procurement" target="_blank" rel="noopener">
+<span>jeffy893/agentic-procurement</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/gurila.tools" target="_blank" rel="noopener">
+<span>jeffy893/gurila.tools - Potential Projects</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/jeffy893/riskrunners" target="_blank" rel="noopener">
+<span>jeffy893/riskrunners - Potential Projects</span>
+<svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Survitality-Series_273645597.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Survitality Series</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="Put-Options-on-Loyalty_273580035.html">
+<button class="nav-toggle" aria-label="Expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+<span>Put Options on Loyalty</span></a>
+<ul class="nav-tree">
+<li class="nav-item">
+<a class="nav-link" href="273711105.html">
+<span>Street Math (with a Super Computer?)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="273416209.html">
+<span>Chapter 10 (of Put Options on Loyalty)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Ontology-of-Survitality_329383944.html">
+<span>Ontology of Survitality</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </div>
+        </aside>
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="site-main">
+            <div class="content-wrapper">
+                <nav class="breadcrumbs">
+<a href="../index.html">Richards Systems</a>
+<span class="separator">/</span>
+<a href="2019-2025-Responsibility-Futures_192643159.html">2019-2025 Responsibility Futures</a>
+<span class="separator">/</span>
+<a href="2024-2025-Responsibility-Futures_205717545.html">2024-2025 Responsibility Futures</a>
+<span class="separator">/</span>
+<span>Predicate Calculus for Responsibility Index</span>
+</nav>
+                <h1 class="page-title">Predicate Calculus for Responsibility Index</h1>
+<div class="page-meta">By Jefferson Richards · Jan 01, 2026</div>
+<div class="article-content">
+<p>(Generated by Gemini Deep Research)</p><p>2025-03-26</p><p>Inspired by Jefferson Richards writing on:</p><p><a href="https://ex.wiki.richards.systems/wiki/spaces/RS/embed/90570754" rel="nofollow">Stockholm Forgiveness of Responsibility: A Futures Market</a></p><h1 id="PredicateCalculusforResponsibilityIndex-APredicateCalculusFrameworkforDefiningInsurancePoliciesBasedonDiligenceandNegligence">A Predicate Calculus Framework for Defining Insurance Policies Based on Diligence and Negligence</h1><h2 id="PredicateCalculusforResponsibilityIndex-1.Introduction">1. Introduction</h2><p>The insurance industry fundamentally operates on the principle of managing risk, a task traditionally accomplished through actuarial science and statistical analysis to predict the likelihood and severity of potential losses <sup>1</sup>. However, the core criteria for determining whether a particular risk is suitable for insurance coverage often remain less formally defined from a logical standpoint. The user proposes an innovative approach to address this by utilizing the ratio of diligence to negligence as a central factor in establishing criteria for independent and homogenous risks. This concept suggests that the degree to which potential policyholders or insured parties exercise diligence, contrasted with their propensity for negligence, can provide a basis for a more nuanced and potentially automated method of defining insurance policy parameters. This report explores the feasibility of leveraging predicate calculus, a powerful tool in formal logic, to construct such a framework. Predicate calculus offers the precision required to define complex rules and conditions, potentially leading to a more rigorous and transparent approach to insurance policy design <sup>6</sup>. The challenge lies in translating abstract concepts like &quot;independent&quot; and &quot;homogenous&quot; risks, as well as the more subjective notions of diligence and negligence, into the formal language of predicate calculus. By establishing clear predicates and quantified statements based on the diligence-to-negligence ratio, this report aims to lay the groundwork for a novel method of formulating insurance policy criteria. The subsequent sections will delve into the foundational concepts of predicate calculus, the principles of insurance risk, the conceptualization and potential quantification of diligence and negligence, the proposed ratio framework, its application in formulating insurance policies, the role of benchmarking, illustrative examples, and finally, the conclusions and potential future directions of this approach.</p><h2 id="PredicateCalculusforResponsibilityIndex-2.PredicateCalculus:FoundationalConcepts">2. Predicate Calculus: Foundational Concepts</h2><p>Predicate logic, also known as predicate calculus or first-order logic, extends the capabilities of propositional logic by introducing quantifiers and variables, enabling the expression of complex statements about properties and relationships between objects <sup>6</sup>. This framework provides a foundation for formal mathematical proofs, logical deductions, and rigorous analysis across various fields <sup>6</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-CoreElementsofPredicateLogic">Core Elements of Predicate Logic</h3><p>At the heart of predicate logic are <strong>predicates</strong>, which represent properties or relations that can be either true or false for given arguments <sup>6</sup>. The number of arguments a predicate takes is its <strong>arity</strong>; for example, a unary predicate describes a property of a single object (e.g., <code>IsDiligent(person)</code>), while a binary predicate describes a relation between two objects (e.g., <code>CausedNegligence(person, event)</code>) <sup>6</sup>. <strong>Variables</strong> act as placeholders for objects within a defined <strong>domain of discourse</strong>, which could include persons, events, or other relevant entities <sup>6</sup>. Variables can be either <strong>free</strong> or <strong>bound</strong> depending on whether they fall within the scope of a quantifier <sup>7</sup>. <strong>Constants</strong> are specific identifiers that directly name particular individuals or objects within the domain, such as <code>John</code> or a specific <code>EventX</code> <sup>11</sup>. <strong>Functions</strong> are operators that take a specific number of arguments and return a unique value, which is also an element of the domain <sup>9</sup>. For instance, <code>Ratio(diligence, negligence)</code> could be a function that calculates the ratio based on the provided diligence and negligence values. A <strong>term</strong> in predicate logic can be a constant, a variable, or an expression formed by a function applied to terms <sup>9</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-Quantifiers">Quantifiers</h3><p>Predicate logic introduces <strong>quantifiers</strong> to express the extent to which a predicate is true over a range of elements <sup>8</sup>. The <strong>universal quantifier (∀)</strong> signifies &quot;for all&quot; or &quot;for every,&quot; indicating that a statement holds true for all objects in the domain (e.g., <code>∀e (IsInsuredEvent(e) → Independent(e))</code>) <sup>6</sup>. The <strong>existential quantifier (∃)</strong>means &quot;there exists&quot; or &quot;for some,&quot; asserting that a statement is true for at least one object in the domain (e.g., <code>∃p (IsPolicyholder(p) ∧ HighDiligence(p))</code>) <sup>6</sup>. Quantifiers can be combined, and their order and scope are crucial for determining the meaning of complex logical statements <sup>6</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-LogicalConnectives">Logical Connectives</h3><p>Standard <strong>logical connectives</strong> from propositional logic are also used in predicate logic to combine atomic formulas (predicates with terms as arguments) into more complex <strong>well-formed formulas (WFFs)</strong> <sup>7</sup>. These include AND (∧), OR (∨), NOT (¬), Implication (→), and Equivalence (↔). These connectives operate based on truth values, allowing for the construction of intricate logical conditions within insurance policies.</p><h3 id="PredicateCalculusforResponsibilityIndex-SyntaxandSemantics">Syntax and Semantics</h3><p>The <strong>syntax</strong> of predicate logic defines the rules for constructing valid formulas and expressions, ensuring unambiguous interpretation <sup>6</sup>. A WFF is formed by composing atomic formulas with logical connectives and quantifiers <sup>8</sup>. <strong>Semantics</strong> deals with the meaning and interpretation of these logical formulas, providing a framework for evaluating their truth and validity within a specific domain of discourse <sup>6</sup>. An <strong>interpretation</strong>assigns meaning to the predicates, functions, and constants, while a <strong>model</strong> is an interpretation under which a given formula is true <sup>9</sup>. Formulas can be satisfiable (true under at least one interpretation), valid (true under all possible interpretations), or unsatisfiable (false under all interpretations) <sup>6</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-ApplicationsinFormalizingRules">Applications in Formalizing Rules</h3><p>Predicate calculus is widely used for formalizing rules and conditions across various domains. In mathematics, it forms the basis for expressing and proving theorems <sup>6</sup>. In computer science and artificial intelligence, it is used to define rules in expert systems and logic programming languages like Prolog, as well as for knowledge representation and inference <sup>6</sup>. The ability to decompose complex statements and use quantifiers to make general assertions makes predicate calculus a suitable tool for formalizing the intricate conditions often found in insurance policies <sup>9</sup>.</p><h2 id="PredicateCalculusforResponsibilityIndex-3.InsuranceRisk:IndependenceandHomogeneity">3. Insurance Risk: Independence and Homogeneity</h2><p>The insurance industry is built upon the foundation of managing risk, which, in its simplest form, refers to the possibility of a loss <sup>25</sup>. Insurance mechanisms primarily deal with <strong>pure risks</strong>, where the outcome is either a loss or no loss, and these risks must be measurable in financial terms to be insurable <sup>26</sup>. Key to the effective functioning of insurance are the principles of <strong>independent risk</strong> and <strong>homogenous risk</strong>.</p><h3 id="PredicateCalculusforResponsibilityIndex-ImportanceofIndependentRisk">Importance of Independent Risk</h3><p>Independent risk is crucial for the concept of risk pooling, which underlies the financial stability of insurance <sup>1</sup>. The law of large numbers, a fundamental principle in insurance mathematics, allows insurers to predict losses more accurately when risks are independent <sup>1</sup>. Independence ensures that the occurrence of one insured event does not significantly affect the probability of other insured events. If risks are not independent, such as insuring numerous properties in the same flood-prone area, a single event can lead to a large number of correlated losses, potentially jeopardizing the insurer's ability to pay claims and maintain solvency <sup>30</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-ImportanceofHomogenousRisk">Importance of Homogenous Risk</h3><p>Homogenous risk is equally important for ensuring fair premium calculation <sup>27</sup>. By grouping insured entities or events with similar risk profiles into <strong>risk classes</strong>, insurers can apply actuarial science and probability to estimate the expected frequency and severity of losses for the group <sup>1</sup>. This process, known as <strong>underwriting</strong>, allows for the determination of premiums that are commensurate with the level of risk presented by the insured group <sup>30</sup>. If risks within a policy are not homogenous, for example, if a life insurance policy covers individuals with vastly different health conditions without appropriate differentiation in premiums, the pricing becomes inaccurate and unfair, potentially leading to adverse selection where higher-risk individuals are more likely to purchase the policy <sup>31</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-ChallengesinEnsuringIndependenceandHomogeneity">Challenges in Ensuring Independence and Homogeneity</h3><p>Ensuring true independence and homogeneity in insurance is a complex task due to the inherent interconnectedness of the real world and the difficulty in perfectly categorizing risks <sup>36</sup>. Underwriting guidelines play a crucial role in assessing these criteria by evaluating various factors related to the applicant or the insured event to determine if they fit within acceptable risk classes <sup>36</sup>. However, defining precise boundaries for these categories and accounting for all potential interdependencies remains a challenge.</p><h2 id="PredicateCalculusforResponsibilityIndex-4.ConceptualizingandQuantifyingDiligenceandNegligence">4. Conceptualizing and Quantifying Diligence and Negligence</h2><p>The user's proposal centers on the ratio of diligence to negligence. To effectively utilize this ratio within a predicate calculus framework, it is essential to first conceptualize and explore potential methods for quantifying these terms.</p><h3 id="PredicateCalculusforResponsibilityIndex-DefiningDiligenceandNegligence">Defining Diligence and Negligence</h3><p>Following the user's definition, diligence can be understood as the inverse of negligence. In a legal context, <strong>negligence</strong> is typically defined by four key elements: the existence of a <strong>duty of care</strong> owed by the defendant to the plaintiff, a <strong>breach of that duty</strong> by the defendant, a causal <strong>connection between the breach and the harm</strong>suffered by the plaintiff, and actual <strong>damages or loss</strong> to the plaintiff <sup>41</sup>. The standard for determining a breach of duty is often based on what a <strong>reasonable person</strong> would have done in similar circumstances <sup>41</sup>. The <strong>Hand formula</strong> provides an economic perspective on this, suggesting a breach of duty occurs if the burden of taking precautions is less than the probability of loss multiplied by the severity of the loss (B &lt; PL) <sup>41</sup>. Ethically, negligence can be viewed in terms of a failure to bring a relevant fact to mind, as opposed to genuine ignorance, highlighting the moral responsibility associated with such oversights <sup>52</sup>.</p><p><strong>Due diligence</strong>, a concept prevalent in business and legal contexts, represents a thorough investigation and analysis undertaken to evaluate the value and risks of a transaction or situation <sup>54</sup>. It involves examining financial, legal, operational, and other aspects, and often includes quantifiable elements <sup>54</sup>. In the context of cybersecurity, due diligence assesses an organization's security measures and practices <sup>67</sup>. Due diligence can be considered a practical manifestation of diligence, involving proactive steps to prevent negative outcomes.</p><h3 id="PredicateCalculusforResponsibilityIndex-PotentialApproachestoQuantifyingDiligenceandNegligence">Potential Approaches to Quantifying Diligence and Negligence</h3><p>Quantifying diligence and negligence, which are often qualitative concepts, presents a significant challenge. One approach could involve developing a <strong>scale or index</strong> based on predefined criteria relevant to the specific context of the insurance policy. For instance, in homeowner's insurance, diligence might be scored based on the frequency of property maintenance, the presence and functionality of safety devices, and adherence to safety guidelines. Negligence, conversely, could be assessed based on documented instances of property neglect or unsafe practices.</p><p>Another method could focus on defining metrics related to <strong>adherence to standards or best practices</strong> <sup>36</sup>. For example, in business liability insurance, diligence could be quantified by the level of implementation of recognized safety standards, the frequency and thoroughness of risk assessments, and the provision of safety training. Negligence could be indicated by deviations from these standards or a lack of necessary safety measures. Risk management frameworks often include quantifiable measures of adherence to security or operational standards, which could serve as a basis for this approach <sup>36</sup>.</p><p>The logic of the <strong>Hand formula</strong> could also be adapted. While the formula itself assesses breach of duty (negligence), it considers the burden of precaution relative to the expected loss. A measure of diligence could potentially be derived by evaluating the extent to which an individual or entity invests in precautions that are commensurate with the potential risks, where a higher investment relative to the potential loss might indicate greater diligence.</p><p>Finally, historical data on the <strong>frequency and severity of past negligent events</strong> or the implementation of <strong>diligent practices</strong> could provide a basis for quantification. For example, in automobile insurance, a driver's history of accidents and traffic violations could serve as a measure of past negligence, while participation in defensive driving courses or a record of regular vehicle maintenance could indicate diligence.</p><div class="table-wrap"><table data- class="confluenceTable"><tbody><tr data-><td data- class="confluenceTd"><p><strong>Concept</strong></p></td><td data- class="confluenceTd"><p><strong>Perspective</strong></p></td><td data- class="confluenceTd"><p><strong>Potential Quantification Approaches</strong></p></td><td data- class="confluenceTd"><p><strong>Relevant Snippets (IDs)</strong></p></td></tr><tr data-><td data- class="confluenceTd"><p>Diligence</p></td><td data- class="confluenceTd"><p>User's Definition (Inverse of Negligence)</p></td><td data- class="confluenceTd"><p>Quantification methods for negligence would implicitly quantify diligence inversely.</p></td><td data- class="confluenceTd"></td></tr><tr data-><td data- class="confluenceTd"><p>Negligence</p></td><td data- class="confluenceTd"><p>Legal</p></td><td data- class="confluenceTd"><p>Assessment based on duty of care, breach (e.g., using the Hand formula), causation, and damages.</p></td><td data- class="confluenceTd"><p><sup>41</sup>, <sup>42</sup>, <sup>43</sup>, <sup>44</sup>, <sup>51</sup>, <sup>45</sup>, <sup>46</sup>, <sup>47</sup>, <sup>41</sup>, <sup>48</sup>, <sup>49</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Negligence</p></td><td data- class="confluenceTd"><p>Ethical</p></td><td data- class="confluenceTd"><p>Evaluation of awareness of relevant facts and moral responsibility for inadvertent failures.</p></td><td data- class="confluenceTd"><p><sup>52</sup>, <sup>53</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Diligence</p></td><td data- class="confluenceTd"><p>Due Diligence (Business/Legal)</p></td><td data- class="confluenceTd"><p>Metrics related to thoroughness of investigation and analysis across financial, legal, operational, and other domains. In cybersecurity, assessment of security measures, policies, and procedures.</p></td><td data- class="confluenceTd"><p><sup>54</sup>, <sup>55</sup>, <sup>56</sup>, <sup>57</sup>, <sup>58</sup>, <sup>59</sup>, <sup>60</sup>, <sup>61</sup>, <sup>62</sup>, <sup>63</sup>, <sup>64</sup>, <sup>65</sup>, <sup>66</sup>, <sup>67</sup>, <sup>68</sup>, <sup>69</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Diligence/ Negligence</p></td><td data- class="confluenceTd"><p>Risk Management</p></td><td data- class="confluenceTd"><p>Scales or indices based on predefined criteria, adherence to standards or best practices, adaptation of the Hand formula's logic, frequency and severity of past events.</p></td><td data- class="confluenceTd"><p><sup>88</sup>, <sup>89</sup>, <sup>90</sup>, <sup>91</sup>, <sup>92</sup>, <sup>70</sup>, <sup>71</sup>, <sup>72</sup>, <sup>36</sup></p></td></tr></tbody></table><h3 id="PredicateCalculusforResponsibilityIndex-ChallengesinQuantification">Challenges in Quantification</h3><p>Despite these potential approaches, significant challenges remain in quantifying inherently subjective and context-dependent concepts like diligence and negligence. Obtaining reliable and comprehensive data can be difficult, and defining appropriate units of measurement that are consistent across different contexts will require careful consideration. Any attempt at quantification will likely involve some degree of simplification of complex realities.</p><h2 id="PredicateCalculusforResponsibilityIndex-5.TheRatioofDiligencetoNegligence:AConceptualFramework">5. The Ratio of Diligence to Negligence: A Conceptual Framework</h2><p>Building upon the potential methods for quantifying diligence and negligence, a conceptual framework for the ratio of diligence to negligence can be proposed.</p><h3 id="PredicateCalculusforResponsibilityIndex-FormalDefinitionoftheRatio">Formal Definition of the Ratio</h3><p>The formal definition of the ratio will depend heavily on the chosen methods of quantification. If both diligence (D) and negligence (N) are quantified on a continuous scale, the ratio (R) could be simply defined as R = D / N. Alternatively, if diligence and negligence are represented by multiple metrics, a more complex formula might be needed, potentially involving weighted averages or other aggregation techniques. It is also possible that diligence and negligence could be represented as binary indicators (e.g., either a certain standard of diligence is met or not), in which case the ratio might be interpreted as the presence or absence of diligence relative to the presence or absence of negligence indicators.</p><h3 id="PredicateCalculusforResponsibilityIndex-InterpretationoftheRatio&#39;sValue">Interpretation of the Ratio's Value</h3><p>The value of the ratio would ideally provide a clear indication of the balance between diligence and negligence. A <strong>high ratio</strong> (R &gt; 1, assuming positive values) would suggest a higher degree of diligence relative to negligence, potentially indicating a lower risk profile. Conversely, a <strong>low ratio</strong> (0 &lt; R &lt; 1) would imply that negligence outweighs diligence, suggesting a higher risk. Specific thresholds or ranges for the ratio could be established to categorize different levels of diligence. For example, a ratio above a certain value might classify an individual or entity as &quot;highly diligent,&quot; while a ratio below another threshold could indicate &quot;negligent.&quot;</p><h3 id="PredicateCalculusforResponsibilityIndex-RelatingtheRatiotoProbabilityandSeverityofInsurableEvents">Relating the Ratio to Probability and Severity of Insurable Events</h3><p>The fundamental assumption underlying this framework is that there is an inverse relationship between the diligence-to-negligence ratio and the probability and severity of insurable events. It is hypothesized that a higher ratio, indicating greater diligence, should correlate with a lower likelihood of events occurring due to negligence and potentially a reduced severity of losses if events do occur. This is because diligent practices and behaviors are intended to prevent or mitigate risks that could lead to insurable losses.</p><h3 id="PredicateCalculusforResponsibilityIndex-PotentialLimitationsoftheRatio">Potential Limitations of the Ratio</h3><p>It is important to acknowledge the potential limitations of relying solely on this ratio. It may oversimplify the complex interplay of factors that contribute to insurable risks. External factors beyond the control of the insured, such as natural disasters or unforeseen market changes, might significantly impact the probability and severity of losses regardless of the level of diligence exercised. Furthermore, the interpretation of the ratio might need to be context-specific, as what constitutes diligence and negligence can vary across different types of insurance and insured activities.</p><h2 id="PredicateCalculusforResponsibilityIndex-6.FormulatingInsurancePoliciesinPredicateCalculususingtheDiligence-NegligenceRatio">6. Formulating Insurance Policies in Predicate Calculus using the Diligence-Negligence Ratio</h2><p>To integrate the diligence-to-negligence ratio into a predicate calculus framework for insurance policies, several steps are necessary.</p><h3 id="PredicateCalculusforResponsibilityIndex-RepresentingDiligenceandNegligenceasPredicates">Representing Diligence and Negligence as Predicates</h3><p>The quantified measures of diligence and negligence can be incorporated into predicates. For example, if a numerical threshold is established, predicates like <code>HighDiligence(person)</code> could be defined to be true if the person's diligence-to-negligence ratio exceeds that threshold. Similarly, <code>NegligenceThresholdBreached(event)</code>could be true if the factors contributing to negligence in an event surpass a certain level.</p><h3 id="PredicateCalculusforResponsibilityIndex-IncorporatingtheRatiointoQuantifiedStatements">Incorporating the Ratio into Quantified Statements</h3><p>Universal and existential quantifiers can be used to define policy conditions based on these predicates. For instance, a policy might state that <code>∀p (IsInsured(p) → HighDiligence(p))</code>, meaning that for all insured parties, a high level of diligence (as defined by the ratio) must be maintained.</p><h3 id="PredicateCalculusforResponsibilityIndex-DefiningIndependenceandHomogeneityusingtheRatio">Defining Independence and Homogeneity using the Ratio</h3><p>The diligence-to-negligence ratio can conceptually contribute to the definition of independent and homogenous risks within predicate calculus.</p><p><strong>Independence:</strong> Independence might be indicated by a lack of correlation in the negligence factors (or a consistent presence of diligence factors) across different insured entities or events. This could be represented as:</p><p><code>∀e1 ∀e2 ((IsInsuredEvent(e1) ∧ IsInsuredEvent(e2) ∧ e1 ≠ e2) → ¬CorrelatedNegligence(e1, e2))</code></p><p>Where <code>CorrelatedNegligence(e1, e2)</code> could be defined based on whether the diligence-to-negligence ratios of the parties or contexts involved in <code>e1</code> and <code>e2</code> show a statistically significant correlation, suggesting a shared underlying negligence factor.</p><p><strong>Homogeneity:</strong> Homogeneity could be defined by the similarity of the diligence-to-negligence ratios within a specific risk class. This might be expressed as:</p><p><code>∀p1 ∀p2 ((IsPolicyholder(p1) ∧ IsPolicyholder(p2) ∧ PolicyType(p1) = PolicyType(p2)) → SimilarDiligenceRatio(p1, p2))</code></p><p>Here, <code>SimilarDiligenceRatio(p1, p2)</code> could be true if the difference between the diligence-to-negligence ratios of policyholders <code>p1</code> and <code>p2</code> is below a predefined threshold, indicating a similar level of diligence (or negligence).</p><h3 id="PredicateCalculusforResponsibilityIndex-StructuringPolicyConditionswithLogicalConnectives">Structuring Policy Conditions with Logical Connectives</h3><p>These predicates and quantified statements can be combined using logical connectives to form comprehensive policy conditions. For example:</p><p><code>∀e (Occurs(e) ∧ IsCoveredPeril(e) ∧ ∃p (ResponsibleParty(p, e) ∧ HighDiligence(p)) ∧ PolicyActive(PolicyOf(e)) ∧ Independent(e) ∧ HomogenousRiskClass(e, RiskClassOfPolicy(PolicyOf(e)))) → PayClaim(PolicyOf(e), e)</code></p><p>This formula conceptually states that for all events <code>e</code>, if the event occurs, it is a covered peril, there exists a responsible party <code>p</code> who demonstrated high diligence, the policy is active, the risk is independent, and it belongs to a homogenous risk class defined by the policy, then the claim should be paid.</p><h2 id="PredicateCalculusforResponsibilityIndex-7.BenchmarkingDiligenceandNegligenceforRiskCategorization">7. Benchmarking Diligence and Negligence for Risk Categorization</h2><p>Benchmarks play a crucial role in risk assessment by providing standards for comparison <sup>73</sup>. In the context of the diligence-to-negligence ratio, benchmarks can help establish what constitutes an acceptable or high level of diligence and identify deviations that might indicate increased risk.</p><h3 id="PredicateCalculusforResponsibilityIndex-TheRoleofBenchmarksinRiskAssessment">The Role of Benchmarks in Risk Assessment</h3><p>Benchmarking involves gathering, comparing, and analyzing data to inform actions aimed at optimizing insurance coverage and risk management processes <sup>73</sup>. By comparing an insured's or a group of insureds' diligence-to-negligence ratio against industry standards or historical data, insurers can gain a better understanding of their relative risk profile <sup>74</sup>. This comparison can help identify areas where improvements in diligence might be needed or where the level of negligence is higher than expected for a particular risk class.</p><h3 id="PredicateCalculusforResponsibilityIndex-SourcesofBenchmarks">Sources of Benchmarks</h3><p>Several sources can provide benchmarks for diligence and negligence, although direct benchmarks for these specific concepts might be limited and require careful construction based on related data. <strong>Industry standards and best practices</strong> in safety, maintenance, and operational procedures can serve as indicators of diligence <sup>74</sup>. <strong>Historical data</strong> on the frequency and severity of losses related to specific types of negligence can provide a baseline for comparison. <strong>Regulatory guidelines</strong> often mandate certain levels of diligence in specific industries (e.g., safety regulations in workplaces) <sup>36</sup>. <strong>Actuarial data and risk models</strong> that predict expected loss frequencies based on various factors can implicitly provide benchmarks for acceptable levels of negligence or the expected impact of diligence <sup>78</sup>. Additionally, <strong>benchmarking services and surveys</strong> in the insurance industry might offer comparative data on claims frequencies and costs for different risk categories, which can be indirectly related to diligence and negligence <sup>76</sup>.</p><h3 id="PredicateCalculusforResponsibilityIndex-UsingBenchmarkstoDefinePredicatesinPredicateCalculus">Using Benchmarks to Define Predicates in Predicate Calculus</h3><p>Benchmarks can be used to set thresholds for the diligence-to-negligence ratio, allowing for the definition of more concrete predicates in predicate calculus. For example:</p><p><code>HighDiligence(p) ↔ (Ratio(DiligenceMeasure(p), NegligenceMeasure(p)) &gt; GetBenchmarkThreshold(PolicyTypeOf(p), &quot;Diligence&quot;))</code></p><p>Here, <code>GetBenchmarkThreshold</code> is a function that retrieves the benchmark threshold for diligence for a specific policy type. The predicate <code>HighDiligence(p)</code> is true if the policyholder's ratio exceeds this benchmark.</p><h3 id="PredicateCalculusforResponsibilityIndex-CategorizingRisksBasedonBenchmarkedRatios">Categorizing Risks Based on Benchmarked Ratios</h3><p>By comparing the diligence-to-negligence ratio against established benchmarks, insurers can categorize risks into different classes or tiers <sup>30</sup>. For instance, policyholders with diligence ratios significantly above the benchmark for their risk class might be considered lower risk and thus eligible for better policy terms or lower premiums. Conversely, those with ratios below the benchmark might be classified as higher risk, potentially leading to higher premiums or more stringent policy conditions.</p><div class="table-wrap"><table data- class="confluenceTable"><tbody><tr data-><td data- class="confluenceTd"><p><strong>Source Category</strong></p></td><td data- class="confluenceTd"><p><strong>Specific Examples of Sources</strong></p></td><td data- class="confluenceTd"><p><strong>Type of Data/Benchmarks Available</strong></p></td><td data- class="confluenceTd"><p><strong>Relevant Snippets (IDs)</strong></p></td></tr><tr data-><td data- class="confluenceTd"><p>Industry Associations</p></td><td data- class="confluenceTd"><p>Trade groups, professional organizations</p></td><td data- class="confluenceTd"><p>Best practices, safety guidelines, performance metrics</p></td><td data- class="confluenceTd"><p><sup>73</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Regulatory Bodies</p></td><td data- class="confluenceTd"><p>Government agencies (e.g., OSHA, financial regulators)</p></td><td data- class="confluenceTd"><p>Mandated standards, compliance requirements, incident reporting data</p></td><td data- class="confluenceTd"><p><sup>83</sup>, <sup>36</sup>, <sup>39</sup>, <sup>84</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Actuarial Data &amp; Risk Models</p></td><td data- class="confluenceTd"><p>Insurance data providers, actuarial firms</p></td><td data- class="confluenceTd"><p>Expected loss frequencies, risk factors, statistical models</p></td><td data- class="confluenceTd"><p><sup>78</sup>, <sup>85</sup>, <sup>86</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Benchmarking Services &amp; Surveys</p></td><td data- class="confluenceTd"><p>RIMS Benchmark Survey, USI Benchmarking Platform</p></td><td data- class="confluenceTd"><p>Comparative data on insurance costs, claims experience, risk management practices</p></td><td data- class="confluenceTd"><p><sup>76</sup>, <sup>79</sup>, <sup>80</sup>, <sup>87</sup></p></td></tr><tr data-><td data- class="confluenceTd"><p>Historical Data</p></td><td data- class="confluenceTd"><p>Insurer's own records, industry-wide loss data</p></td><td data- class="confluenceTd"><p>Frequency and severity of past claims, trends in negligence-related losses</p></td><td data- class="confluenceTd"><p><sup>81</sup></p></td></tr></tbody></table><h2 id="PredicateCalculusforResponsibilityIndex-8.IllustrativeExamples">8. Illustrative Examples</h2><p>To further illustrate the application of this framework, consider the following examples:</p><h3 id="PredicateCalculusforResponsibilityIndex-Example1:Homeowner&#39;sInsurance">Example 1: Homeowner's Insurance</h3><p>Diligence could be defined by a homeowner's adherence to a maintenance checklist (e.g., regular inspection of plumbing, electrical systems, roof), the presence and maintenance of safety devices (smoke detectors, fire extinguishers, security systems), and proactive measures to prevent common risks (e.g., clearing gutters, trimming trees). Negligence could be indicated by documented failures to address known maintenance issues, disabled safety devices, or actions that increase the risk of preventable losses (e.g., improper storage of flammable materials). A diligence-to-negligence ratio could be calculated based on the number of diligent practices followed versus the number of negligent indicators present. This ratio could then be benchmarked against industry averages for claims related to poor maintenance or preventable accidents. Predicate calculus formulas could be used to define eligibility for premium discounts based on exceeding a certain benchmarked diligence ratio. For example:</p><p><code>∀h (IsHomeowner(h) ∧ PolicyType(h) = &quot;Standard&quot; ∧ Ratio(DiligenceScore(h), NegligenceScore(h)) &gt; GetBenchmark(&quot;HomeownerDiligenceThreshold&quot;)) → EligibleForDiscount(h)</code></p><h3 id="PredicateCalculusforResponsibilityIndex-Example2:AutomobileInsurance">Example 2: Automobile Insurance</h3><p>Diligence for a driver might include a clean driving record (no recent traffic violations or accidents), regular vehicle maintenance, and participation in defensive driving courses. Negligence could be evidenced by traffic violations, at-fault accidents, and a history of neglecting vehicle maintenance. A ratio could be formed based on these factors, potentially weighted by the severity of violations or accidents. Benchmarking could involve comparing this ratio against average accident rates and violation frequencies for drivers in similar demographic groups. Predicate calculus could formalize risk categorization based on this ratio:</p><p><code>∀d (IsDriver(d) ∧ Ratio(DiligenceScore(d), NegligenceScore(d)) &lt; GetBenchmark(&quot;DriverNegligenceThreshold&quot;)) → HighRiskDriver(d)</code></p><h3 id="PredicateCalculusforResponsibilityIndex-Example3:BusinessLiabilityInsurance">Example 3: Business Liability Insurance</h3><p>Diligence in a business could involve the implementation and consistent enforcement of safety protocols, regular safety training for employees, documented risk assessments, and proactive measures to address identified hazards. Negligence could be indicated by workplace accidents, safety violations reported by regulatory agencies, and a failure to act on identified risks. The diligence-to-negligence ratio could be calculated based on the comprehensiveness and effectiveness of safety measures versus the incidence of safety-related incidents. Benchmarking could compare this ratio against industry averages for workplace injuries and liability claims for similar businesses. Policy coverage or liability limits could be defined using predicate calculus based on the benchmarked ratio:</p><p><code>∀b (IsBusiness(b) ∧ Industry(b) = &quot;Manufacturing&quot; ∧ Ratio(DiligenceScore(b), NegligenceScore(b)) &gt; GetBenchmark(&quot;ManufacturingDiligence&quot;)) → EligibleForIncreasedLiabilityCoverage(b)</code></p><h2 id="PredicateCalculusforResponsibilityIndex-9.ConclusionandFutureDirections">9. Conclusion and Future Directions</h2><p>The proposed approach of using the ratio of diligence to negligence within a predicate calculus framework offers a novel and potentially rigorous method for formalizing insurance policy criteria. By leveraging the expressive power of predicate logic, it becomes possible to define precise conditions for independent and homogenous risks based on a quantifiable measure of an insured's or responsible party's behavior. The use of benchmarking further enhances the objectivity and applicability of this framework by providing external standards for evaluating the diligence-to-negligence ratio.</p><h3 id="PredicateCalculusforResponsibilityIndex-PotentialBenefits">Potential Benefits</h3><p>This approach holds several potential benefits. It could lead to increased rigor and precision in defining insurance policies, moving beyond more qualitative assessments of risk. The formal nature of predicate calculus could facilitate the automation of certain aspects of risk assessment and policy issuance. By explicitly incorporating behavioral aspects like diligence and negligence, the framework could offer a more nuanced and potentially fairer way to assess risk, leading to enhanced transparency and objectivity in underwriting.</p><h3 id="PredicateCalculusforResponsibilityIndex-PotentialLimitationsandChallenges">Potential Limitations and Challenges</h3><p>Despite its promise, this approach also faces limitations and challenges. Quantifying inherently complex and context-dependent concepts like diligence and negligence remains a significant hurdle. The need for robust and reliable data for establishing meaningful benchmarks is critical and might not always be readily available. The insurance industry's potential resistance to adopting a formal logic-based approach could also pose a challenge. Furthermore, capturing all relevant factors that contribute to insurance risk within a logical framework will require careful consideration and may necessitate simplifications.</p><h3 id="PredicateCalculusforResponsibilityIndex-AvenuesforFutureResearch">Avenues for Future Research</h3><p>Future research could focus on developing standardized metrics and data collection methods for diligence and negligence across different insurance sectors. Exploring the application of this framework to a wider variety of insurance policy types and risk scenarios would be valuable. Investigating the use of more advanced logical systems, such as temporal logic (to account for changes in diligence over time) or probabilistic logic (to handle uncertainties in the quantification and the relationship with event probabilities), could further enhance the framework. Finally, developing computational tools for implementing and testing predicate calculus-based insurance policies would be a crucial step towards practical application.</p>
+</div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Richards Systems</h4>
+                        <p>Navigating 10+ years of homegrown AI, responsibility futures, and systems architecture.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Jefferson.Cloud</h4>
+                        <div class="footer-links">
+                            <a href="https://jefferson.cloud" target="_blank">Socialize</a>
+                            <a href="https://richards.systems" target="_blank">Decode</a>
+                            <a href="https://richards.plus" target="_blank">Consult</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-links">
+                            <a href="mailto:jefferson@richards.plus">jefferson@richards.plus</a>
+                            <a href="https://calendar.app.google/P5EQ2C3zceR9r1NM8" target="_blank">Book 30min with Jefferson</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/richards.plus/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jefferson-richards/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://github.com/jeffy893" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                        <a href="https://x.com/perrydime" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
+                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                    </div>
+                    <p>&copy; 2026 Richards Systems. Knowledge base for AI, responsibility, and systems architecture.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</div>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-bottom-nav">
+    <ul class="bottom-nav-items">
+        <li><a href="../index.html" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+            <span>Home</span>
+        </a></li>
+        <li><a href="https://jefferson.cloud" target="_blank" class="bottom-nav-item socialize">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            <span>Socialize</span>
+        </a></li>
+        <li><a href="https://richards.systems" target="_blank" class="bottom-nav-item decode">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+            <span>Decode</span>
+        </a></li>
+        <li><a href="https://richards.plus" target="_blank" class="bottom-nav-item consult">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>Consult</span>
+        </a></li>
+    </ul>
+</nav>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
