@@ -970,6 +970,48 @@ img {
     border-radius: 4px;
 }
 
+/* Featured TOC card (Allegories) */
+.toc-card-featured {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fff7ed 100%);
+    border: 2px solid #f59e0b;
+    grid-column: 1 / -1;
+    position: relative;
+    overflow: hidden;
+}
+
+.toc-card-featured::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.toc-card-featured .toc-icon {
+    background: #fef3c7;
+    font-size: 2.2rem;
+    width: 52px;
+    height: 52px;
+}
+
+.toc-card-featured .toc-card-content h3 {
+    font-size: 1.15rem;
+    color: #92400e;
+}
+
+.toc-card-featured .toc-count {
+    background: #fde68a;
+    color: #92400e;
+}
+
+.toc-card-featured:hover {
+    border-color: #d97706;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
+}
+
 /* Featured links (replacing the plain link-item) */
 .featured-links {
     display: flex;
