@@ -937,6 +937,15 @@ def generate_homepage():
     </div>
 </section>
 
+<!-- PDF Overview -->
+<section class="pdf-feature">
+    <h2 class="video-feature-title">&#128196; The Survitality Paradigm</h2>
+    <div class="pdf-feature-player">
+        <iframe src="assets/docs/The_Survitality_Paradigm.pdf" title="The Survitality Paradigm"></iframe>
+    </div>
+    <a href="assets/docs/The_Survitality_Paradigm.pdf" target="_blank" class="pdf-download">Download PDF</a>
+</section>
+
 <!-- Table of Contents -->
 <nav class="toc">
     <h2 class="toc-title">Table of Contents</h2>

@@ -1145,6 +1145,47 @@ img {
     background: #000;
 }
 
+/* PDF Feature Section */
+.pdf-feature {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.pdf-feature-player {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+}
+
+.pdf-feature-player iframe {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    display: block;
+}
+
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    background: var(--color-accent-light);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.pdf-download:hover {
+    background: var(--color-accent);
+    color: white;
+    text-decoration: none;
+}
+
 /* ============================================
    Table of Contents
    ============================================ */
