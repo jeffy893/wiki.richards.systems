@@ -448,6 +448,13 @@ def page_template(title, content, sidebar_html, breadcrumbs_html, meta="", is_ho
     <div class="site-body">
         <!-- Sidebar -->
         <aside class="site-sidebar">
+            <div class="sidebar-search">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <input type="text" class="search-input" placeholder="Search pages..." aria-label="Search pages">
+                    <div class="search-results"></div>
+                </div>
+            </div>
             <div class="sidebar-content">
                 {sidebar_nav}
             </div>
@@ -844,16 +851,23 @@ def generate_homepage():
     content = '''<div class="home-hero">
     <img src="assets/images/logo.jpeg" alt="Richards Systems" class="home-logo">
     <h1>Richards Systems</h1>
-    <p class="subtitle">Navigating 10+ years of homegrown AI to steer Integral Manufacturing and Shared Services, making a case for 9 Constraints of AI, and deriving an Ontology of Survitality.</p>
+    <p class="subtitle">Navigating 10+ years of homegrown AI to steer Integral Manufacturing and Shared Services, making a case for <a href="pages/9-Constraints-of-AI_91389954.html" class="hero-link">9 Constraints of AI</a>, and deriving an Ontology of Survitality.</p>
     <div class="contact-info">
-        <a href="mailto:jefferson@richards.plus">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            jefferson@richards.plus
+        <a href="#" class="copy-email-btn" data-email="jefferson@richards.plus">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            <span class="copy-text">jefferson@richards.plus</span>
         </a>
         <a href="https://calendar.app.google/P5EQ2C3zceR9r1NM8" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Book 30min with Jefferson
         </a>
+    </div>
+    <div class="home-search">
+        <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" class="search-input home-search-input" placeholder="Search all pages..." aria-label="Search pages">
+            <div class="search-results"></div>
+        </div>
     </div>
 </div>
 
@@ -1022,7 +1036,7 @@ def generate_homepage():
     <h2 class="section-heading">Personal</h2>
     <div class="featured-links">
         <a href="https://www.jefferson.cloud" target="_blank" class="featured-link">
-            <span class="featured-emoji">&#127752;</span>
+            <span class="featured-emoji">&#9729;&#65039;</span>
             <span class="featured-text">jefferson.cloud — Socialize</span>
         </a>
         <a href="https://www.richards.systems" target="_blank" class="featured-link">
@@ -1130,5 +1144,65 @@ def build_all_pages():
     print("Done!")
 
 
+def build_search_index():
+    """Generate a JSON search index of all pages for client-side search."""
+    import json
+    
+    all_pages = []
+    def collect_pages(tree, path_parts=None):
+        if path_parts is None:
+            path_parts = []
+        for node in tree:
+            filename = node["file"]
+            title = node["title"]
+            current_path = path_parts + [title]
+            
+            # Skip home
+            if node.get("is_home"):
+                if "children" in node:
+                    collect_pages(node["children"], [])
+                continue
+            
+            # Determine URL
+            if filename in EXTERNAL_LINKS:
+                url = EXTERNAL_LINKS[filename]
+                is_external = True
+            else:
+                url = f"pages/{get_page_slug(filename)}.html"
+                is_external = False
+            
+            # Get content snippet for search
+            snippet = ""
+            if not is_external and filename not in GDRIVE_LINKS and filename not in AMAZON_LINKS:
+                filepath = RS_DIR / filename
+                if filepath.exists():
+                    raw = filepath.read_text(errors='replace')
+                    # Extract text content
+                    text_m = re.search(r'wiki-content group">(.*?)(?:</div>\s*\n|<div class="pageSection)', raw, re.DOTALL)
+                    if text_m:
+                        snippet = re.sub(r'<[^>]+>', ' ', text_m.group(1))
+                        snippet = re.sub(r'\s+', ' ', snippet).strip()[:200]
+            
+            entry = {
+                "title": title,
+                "url": url,
+                "path": " > ".join(current_path[:-1]) if len(current_path) > 1 else "",
+                "snippet": snippet,
+                "external": is_external
+            }
+            all_pages.append(entry)
+            
+            if "children" in node:
+                collect_pages(node["children"], current_path)
+    
+    collect_pages(NAV_TREE)
+    
+    # Write search index
+    index_path = BASE_DIR / 'assets' / 'search-index.json'
+    index_path.write_text(json.dumps(all_pages, ensure_ascii=False))
+    print(f"  Generated: search-index.json ({len(all_pages)} entries)")
+
+
 if __name__ == "__main__":
     build_all_pages()
+    build_search_index()
