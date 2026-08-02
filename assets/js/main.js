@@ -109,6 +109,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Clicking a nav-link that has a toggle button also expands/collapses the subtree
+    document.querySelectorAll('.nav-link').forEach(function(link) {
+        var toggle = link.querySelector('.nav-toggle');
+        if (!toggle) return;
+        link.addEventListener('click', function(e) {
+            // If the click was on the toggle button itself, it's already handled above
+            if (e.target.closest('.nav-toggle')) return;
+            // Expand/collapse the subtree
+            var navItem = link.closest('.nav-item');
+            var subtree = navItem.querySelector(':scope > .nav-tree');
+            if (subtree) {
+                subtree.classList.toggle('expanded');
+                toggle.classList.toggle('expanded');
+            }
+        });
+    });
     
     // Auto-expand active path in sidebar
     var activeLink = document.querySelector('.nav-link.active');

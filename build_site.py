@@ -122,6 +122,7 @@ NAV_TREE = [
                     {"title": "The Pacific Go", "file": "The-Pacific-Go_90800131.html"},
                     {"title": "Caveman Fashion", "file": "Caveman-Fashion_152895556.html"},
                     {"title": "Street Math", "file": "Street-Math_273383426.html"},
+                    {"title": "The LAN Party", "file": "The-LAN-Party_329900001.html"},
                 ]
             },
             {
@@ -267,6 +268,8 @@ AMAZON_LINKS = {
 # Pages with manually-created custom content (skip during build if already exists)
 CUSTOM_PAGES = {
     "Cortext.io-Event-Report_17498151.html",
+    "The-LAN-Party_329900001.html",
+    "Allegories_17760257.html",
 }
 
 # Popular pages (25+ views from Confluence analytics)
