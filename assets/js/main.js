@@ -117,12 +117,17 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             // If the click was on the toggle button itself, it's already handled above
             if (e.target.closest('.nav-toggle')) return;
-            // Expand/collapse the subtree
             var navItem = link.closest('.nav-item');
             var subtree = navItem.querySelector(':scope > .nav-tree');
             if (subtree) {
-                subtree.classList.toggle('expanded');
-                toggle.classList.toggle('expanded');
+                if (!subtree.classList.contains('expanded')) {
+                    // Subtree is collapsed — expand it and prevent navigation
+                    e.preventDefault();
+                    subtree.classList.add('expanded');
+                    toggle.classList.add('expanded');
+                } else {
+                    // Subtree is already expanded — allow normal navigation
+                }
             }
         });
     });
