@@ -1031,6 +1031,11 @@ def generate_white_paper_page(title):
         'href="2026-09-26_Supply-Chains-for-Responsibility.html"',
         'href="https://wiki.richards.systems/"'
     )
+    # The ERP & Kenneth field guide is not published on the wiki — de-link it to plain text.
+    body = body.replace(
+        '<a href="../2026-09-26_ERP-Kenneth.html">ERP &amp; Kenneth — A Supply-Chain Field Guide.</a>',
+        'ERP &amp; Kenneth — A Supply-Chain Field Guide.'
+    )
 
     mathjax = (
         '<script>window.MathJax={tex:{inlineMath:[["\\\\(","\\\\)"]],'
