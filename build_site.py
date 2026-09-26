@@ -200,6 +200,7 @@ NAV_TREE = [
                     {"title": "The Five Respects", "file": "The-Five-Respects_500000001.html"},
                 ]
             },
+            {"title": "Responsibility Futures — White Paper", "file": "Responsibility-Futures-White-Paper_500000002.html"},
         ]
     }
 ]
@@ -978,6 +979,128 @@ def generate_five_respects_page(title):
 </div>'''
 
 
+# ============================================
+# Native page: Responsibility Futures White Paper
+# (embeds the actual white paper authored under richards.estate,
+#  with MathJax so the LaTeX equations render in the browser)
+# ============================================
+
+WHITE_PAPER_FILE = "Responsibility-Futures-White-Paper_500000002.html"
+
+WHITE_PAPER_SOURCE = (
+    BASE_DIR.parent / "richards.estate" / "strategy" / "item-assure-strategy"
+    / "responsibility-futures" / "2026-09-26_Responsibility-Futures_WhitePaper.html"
+)
+
+WHITE_PAPER_SNIPPET = (
+    "Pricing the Line Item: the stochastic mathematics of inventory and queuing and the actuarial "
+    "mathematics of responsibility (R = I/N) are the same mathematics. Newsvendor, M/M/1, and governed "
+    "Markov equilibrium given behavioral readings; a proposal for dynamic line-item indemnification and "
+    "the morale model of transacting ecosystems."
+)
+
+
+def generate_white_paper_page(title):
+    """Embed the Responsibility Futures white paper as a native wiki page.
+
+    Reads the authored HTML, lifts its <style> block and the inner content of the
+    .paper container, scopes the styles under .rf-wp so they don't leak into the
+    site chrome, and injects MathJax so the LaTeX renders.
+    """
+    if not WHITE_PAPER_SOURCE.exists():
+        return (
+            '<h1 class="page-title">' + html_escape(title) + '</h1>\n'
+            '<div class="page-meta">Perry Dime Publications · Item Assure</div>\n'
+            '<div class="article-content"><p>White paper source not found at build time.</p></div>'
+        )
+
+    src = WHITE_PAPER_SOURCE.read_text(errors='replace')
+
+    # Lift the author's <style> block(s) and scope every rule under .rf-wp.
+    styles = re.findall(r'<style>(.*?)</style>', src, re.DOTALL)
+    style_block = "\n".join(styles)
+    scoped = _scope_css(style_block, ".rf-wp")
+
+    # Lift the inner content of <div class="paper"> ... </div> (the masthead + body).
+    paper_m = re.search(r'<div class="paper">(.*?)</div>\s*</body>', src, re.DOTALL)
+    body = paper_m.group(1).strip() if paper_m else src
+
+    # Rewrite the intra-folder relative links to their live wiki equivalents where possible,
+    # and make the ERP field-guide / sibling links absolute to the estate strategy source.
+    body = body.replace(
+        'href="2026-09-26_Supply-Chains-for-Responsibility.html"',
+        'href="https://wiki.richards.systems/"'
+    )
+
+    mathjax = (
+        '<script>window.MathJax={tex:{inlineMath:[["\\\\(","\\\\)"]],'
+        'displayMath:[["$$","$$"],["\\\\[","\\\\]"]]},svg:{fontCache:"global"}};</script>'
+        '<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>'
+    )
+
+    return (
+        '<div class="article-content rf-wp-wrap">\n'
+        '<style>\n' + scoped + '\n</style>\n'
+        + mathjax + '\n'
+        '<div class="rf-wp">\n' + body + '\n</div>\n'
+        '</div>'
+    )
+
+
+def _scope_css(css, scope):
+    """Prefix each top-level CSS selector with `scope` so the embedded paper's
+    styles apply only inside the scoped container. Leaves @page / @media/:root-ish
+    at-rules and keyframes reasonably intact for a self-contained document."""
+    out = []
+    i = 0
+    n = len(css)
+    while i < n:
+        # Find the next rule block
+        brace = css.find('{', i)
+        if brace == -1:
+            out.append(css[i:])
+            break
+        selector_part = css[i:brace]
+        # Find matching close brace (handle one level of nesting for @media)
+        depth = 1
+        j = brace + 1
+        while j < n and depth > 0:
+            if css[j] == '{':
+                depth += 1
+            elif css[j] == '}':
+                depth -= 1
+            j += 1
+        block = css[brace:j]  # includes outer braces
+        sel = selector_part.strip()
+
+        if sel.startswith('@'):
+            # Drop @page (paged-media only) to avoid affecting the whole site;
+            # keep other at-rules (e.g. @media) but scope their inner selectors.
+            if sel.lower().startswith('@page'):
+                pass
+            elif sel.lower().startswith('@media'):
+                inner = block[block.find('{') + 1:block.rfind('}')]
+                out.append(sel + ' {\n' + _scope_css(inner, scope) + '\n}')
+            else:
+                out.append(sel + block)
+        else:
+            scoped_selectors = []
+            for one in sel.split(','):
+                one = one.strip()
+                if not one:
+                    continue
+                if one in (':root', 'html', 'body'):
+                    # Map document-level selectors onto the scope container itself.
+                    scoped_selectors.append(scope)
+                elif one == '*':
+                    scoped_selectors.append(scope + ' *')
+                else:
+                    scoped_selectors.append(scope + ' ' + one)
+            out.append(', '.join(scoped_selectors) + ' ' + block)
+        i = j
+    return '\n'.join(out)
+
+
 def generate_content_page(filename, title):
     """Generate a page from actual Confluence content."""
     filepath = RS_DIR / filename
@@ -1461,7 +1584,9 @@ def build_all_pages():
         breadcrumbs = render_breadcrumbs(filename)
         
         # Determine content type and generate
-        if filename == FIVE_RESPECTS_FILE:
+        if filename == WHITE_PAPER_FILE:
+            content = generate_white_paper_page(title)
+        elif filename == FIVE_RESPECTS_FILE:
             content = generate_five_respects_page(title)
         elif filename in GDRIVE_LINKS:
             content = generate_gdrive_page(filename, title)
@@ -1513,7 +1638,9 @@ def build_search_index():
             
             # Get content snippet for search
             snippet = ""
-            if filename == FIVE_RESPECTS_FILE:
+            if filename == WHITE_PAPER_FILE:
+                snippet = WHITE_PAPER_SNIPPET
+            elif filename == FIVE_RESPECTS_FILE:
                 snippet = FIVE_RESPECTS_SNIPPET
             elif not is_external and filename not in GDRIVE_LINKS and filename not in AMAZON_LINKS:
                 filepath = RS_DIR / filename
