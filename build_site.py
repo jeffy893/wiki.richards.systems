@@ -1223,19 +1223,27 @@ def generate_homepage():
         </a>
         <div class="books-content">
             <h2 class="books-title">The Survitality Series</h2>
-            <p class="books-tagline">Three volumes exploring data architecture, neurobiology, linguistics, and socioeconomic governance — a framework for navigating an algorithmic world with engineered certainty and vitality.</p>
+            <p class="books-tagline">Survitality is survival with vitality. Across four books and a poetry supplement written from 2015 to 2026, one writer works out what separates natural intelligence from artificial intelligence, and then what that means for risk, responsibility and loyalty in an algorithmic world.</p>
             <div class="books-list">
                 <div class="book-item">
-                    <strong>Book 1: Survitality of the Synapse</strong>
-                    <p>The architecture of language, machine vs. organic learning, and the macro synapse — how neural networks mirror data architecture.</p>
+                    <strong>Book 1: The Great Anxiety</strong>
+                    <p>A memoir and an argument. Ten years of building language software, studying actuarial science and writing three books in three voices, and what it cost to stay steady through a loud decade. Start here, or read it last as the key to the rest.</p>
                 </div>
                 <div class="book-item">
-                    <strong>Book 2: Stockholm Forgiveness of Responsibility</strong>
-                    <p>The calculus of choice (R = I/N), media event codes, and responsibility futures — locking in future choices through agreements.</p>
+                    <strong>Book 2: Survitality of the Synapse</strong>
+                    <p>The springtime book. Neurobiology, farm life and poetry meet data architecture, as bees, bears and a foggy island of ships ask what separates natural from artificial intelligence.</p>
                 </div>
                 <div class="book-item">
-                    <strong>Book 3: Put Options on Loyalty</strong>
-                    <p>Optionality requires loyalty. The Dunbar Calculus of Value, Ambient Gantt, Family Medic, and the Family Charter — translating macroeconomic tools into household cooperation.</p>
+                    <strong>Book 3: Stockholm Forgiveness of Responsibility</strong>
+                    <p>The summer book. The calculus of choice (R = I/N), media event codes and responsibility futures, written in compressed form for a reader that did not yet exist.</p>
+                </div>
+                <div class="book-item">
+                    <strong>Book 4: Put Options on Loyalty</strong>
+                    <p>The evaluation. Optionality requires loyalty. The Dunbar Calculus of Value, Ambient Gantt, Family Medic and the Family Charter translate macroeconomic tools into household cooperation.</p>
+                </div>
+                <div class="book-item">
+                    <strong>Supplement: Thought Fat: Selected Poems</strong>
+                    <p>Thirty poems from the same years, the emotional record of the series.</p>
                 </div>
             </div>
             <a href="https://www.amazon.com/dp/B0GQVVVD6Q?binding=paperback" target="_blank" class="books-cta">
